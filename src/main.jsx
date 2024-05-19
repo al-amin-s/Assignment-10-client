@@ -15,6 +15,7 @@ import ErrorPage from './Components/ErrorPage.jsx';
 import LogIn from './Components/LogIn.jsx';
 import ArtAndCraftCategoriesCard from './Components/ArtAndCraftCategoriesCard.jsx';
 import FirebaseProvider from './FirbaseProvider/FirebaseProvider.jsx';
+import CraftItemSection from './Components/CraftItemSection.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/home",
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('http://localhost:5000/art')
       },
       {
         path:"/login",
@@ -48,6 +50,11 @@ const router = createBrowserRouter([
       {
         path:"/artandcraftcart",
         element:<ArtAndCraftCategoriesCard></ArtAndCraftCategoriesCard>
+      },
+      {
+        path:"/craftItemSection",
+        element:<CraftItemSection></CraftItemSection>,
+        
       }
     ]
   },
@@ -59,3 +66,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </FirebaseProvider>
   </React.StrictMode>,
 )
+
+
+

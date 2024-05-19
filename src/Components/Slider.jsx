@@ -22,8 +22,8 @@ const Slider = () => {
                     <div className="hero-overlay  bg-opacity-30"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-lg bg-[#ffe3e3] bg-opacity-30 p-9 shadow-2xl rounded-lg ">
-                            <h2 className='mb-5 text-5xl font-bold text-[#b36a6a]'>Welcome to CraftopiaHub</h2>
-                            <p className='mt-4 text-xl text-[#e3afaf]'>Join Us in Celebrating Creativity and Expression - Add Your Artwork to Our Diverse Portfolio</p>
+                            <h2 className='mb-5 text-5xl font-bold text-[#0a0a0a]'>Welcome to CraftopiaHub</h2>
+                            <p className='mt-4 text-xl text-[#a0a0a0]'>Join Us in Celebrating Creativity and Expression - Add Your Artwork to Our Diverse Portfolio</p>
 
                         </div>
                     </div>
