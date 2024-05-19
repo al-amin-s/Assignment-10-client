@@ -16,6 +16,7 @@ import LogIn from './Components/LogIn.jsx';
 import ArtAndCraftCategoriesCard from './Components/ArtAndCraftCategoriesCard.jsx';
 import FirebaseProvider from './FirbaseProvider/FirebaseProvider.jsx';
 import CraftItemSection from './Components/CraftItemSection.jsx';
+import About from './Components/About.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         path:"/craftItemSection",
         element:<CraftItemSection></CraftItemSection>,
         
+      },
+      {
+        path:"/about",
+        element:<About></About>
       }
     ]
   },

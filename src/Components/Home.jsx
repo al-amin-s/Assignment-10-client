@@ -4,6 +4,9 @@ import CraftItemSection from "./CraftItemSection";
 import Slider from "./Slider";
 import CraftItemsCart from "./CraftItemsCart";
 import Frames from "./Frames";
+import Category from "./Category";
+import About from "./About";
+import Footer from "./Footer";
 
 const Home = () => {
     const arts=useLoaderData()
@@ -11,6 +14,7 @@ const Home = () => {
     return (
         <div className=" ">
             <Slider></Slider>
+            <div className="">
             <CraftItemSection>
              </CraftItemSection>
             <div className="grid md:grid-cols-3 gap-5">
@@ -22,8 +26,11 @@ const Home = () => {
 
                 </CraftItemsCart>)
             }
-            </div>
+            </div></div>
+            <Category></Category>
             <Frames></Frames>
+            <About></About>
+            <Footer></Footer>
         </div>
     );
 };
