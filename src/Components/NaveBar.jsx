@@ -4,6 +4,7 @@ import useAuth from "./Hooks/useAuth";
 const NaveBar = () => {
 
     const { logOut,user } = useAuth()
+    console.log(user)
     return (
         <div>
             <div className="navbar bg-[#ded2fa]">
@@ -35,7 +36,7 @@ const NaveBar = () => {
                     user? <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="https://avatars.githubusercontent.com/u/155284387?v=4" alt="" />
+                                <img src={user.photoURL} alt="" />
                             </div>
 
                         </label>

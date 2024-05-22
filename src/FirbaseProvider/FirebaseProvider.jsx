@@ -61,6 +61,7 @@ const [user, setUser]=useState(null)
         logOut,
         user,
     }
+    console.log(user)
     return (
     <AuthContext.Provider value={allValues}>
             {children}

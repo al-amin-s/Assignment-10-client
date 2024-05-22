@@ -19,12 +19,7 @@ const Home = () => {
              </CraftItemSection>
             <div className="grid md:grid-cols-3 gap-5">
             {
-                arts.map(art=><CraftItemsCart
-                key={art._id}
-                art={art}
-                >
-
-                </CraftItemsCart>)
+                arts.slice(0, 6).map(art=><CraftItemsCart key={art._id}art={art}></CraftItemsCart>)
             }
             </div></div>
             <Category></Category>

@@ -13,7 +13,7 @@ const LogIn = () => {
 
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const onSubmit = data => {
-        const { email, password } = data
+        const { email, password } = data;
         signInUser(email, password)
             .then(result => {
                 console.log(result)
