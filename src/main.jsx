@@ -18,6 +18,7 @@ import FirebaseProvider from './FirbaseProvider/FirebaseProvider.jsx';
 import CraftItemSection from './Components/CraftItemSection.jsx';
 import About from './Components/About.jsx';
 import AllCraftDetails from './Components/AllCraftDetails.jsx';
+import CraftItemsCardDetails from './Components/CraftItemsCardDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -67,6 +68,11 @@ const router = createBrowserRouter([
         path:"/allcraftdetails",
         element:<AllCraftDetails></AllCraftDetails>,
         
+      },
+      {
+        path:'/art/:_id',
+        loader:({params})=>fetch(`http://localhost:5000/art/${params._id}`),
+        element:<CraftItemsCardDetails></CraftItemsCardDetails>
       }
     ]
   },

@@ -12,11 +12,25 @@ const AllCraft = () => {
             </div>
             
             
-            <div>
-                {
-                    allCrafts.map(allCraft => <AllCraftCard key={allCraft._id} allCraft={allCraft}></AllCraftCard>)
-                }
-            </div>
+            <div className="overflow-x-auto ">
+                    <table className="table ">
+                        {/* head */}
+                        <thead>
+                            <tr>
+                                
+                                <th>Item Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                allCrafts?.map(allCraft=><AllCraftCard key={allCraft._id}allCraft={allCraft}>hello</AllCraftCard>)
+            }
+                        </tbody>
+                    </table>
+                </div>
         </div>
     );
 };

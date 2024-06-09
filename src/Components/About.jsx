@@ -11,7 +11,7 @@ const About = () => {
                 <div className="hero-content flex-col lg:flex-row">
                 <div>
                         <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                        <h1 className="text-5xl font-bold">Our Experience</h1>
                         <p className="py-6"><span className="text-xl roboto-bold">Enhanced Presentation:</span>
                         Frames provide a polished and professional presentation for your content, whether it is artwork, photographs, or other visual elements. They help draw attention to the content within while adding a decorative touch to your website.</p>
                         

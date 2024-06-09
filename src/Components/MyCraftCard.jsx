@@ -1,12 +1,12 @@
 
 
-                
-                const MyCraftCard = ({myCraft}) => {
-                    const { itemName, category, description, price, rating, customization, processingTime, status, email, userName, imageUrl } = myCraft;
 
+const MyCraftCard = ({ myCraft }) => {
+    const { _id, itemName, category, description, price, rating, customization, processingTime, status, email, userName, imageUrl } = myCraft;
+    console.log(_id, itemName)
     return (
-        <div>
-             <div className="card card-compact w-full mx-auto p-3 ">
+        <div className=" ">
+            <div className="card card-compact w-full mx-auto p-3 ">
                 <figure className="rounded-full"><img src={imageUrl} alt="Shoes" /></figure>
                 <div className="card-body text-center">
                     <h2 className="roboto-medium text-4xl font-semibold">{itemName}</h2>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const CraftItemsCart = ({ art }) => {
@@ -17,7 +18,7 @@ const CraftItemsCart = ({ art }) => {
                     </div>
                     <p><span className="text-xl roboto-medium">Status:</span><span className="text-lg roboto-regular"> {status}</span></p>
                     <div className="card-actions justify-center">
-                        <button className="btn bg-[#37606f]">Details</button>
+                        <Link to={`/art/${_id}`}><button className="btn bg-[#37606f]">Details</button></Link>
                     </div>
                 </div>
             </div>
