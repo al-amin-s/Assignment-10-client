@@ -29,12 +29,7 @@ const CraftItemsCardDetails = () => {
                 </div>
             </div>
         </div>
-        // userName
-        // status,
-        // rating
-        // price
-        // processingTime
-
+        
 
 
     );
