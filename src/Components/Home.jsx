@@ -8,6 +8,7 @@ import Category from "./Category";
 import About from "./About";
 import { useLoaderData } from "react-router-dom";
 import CraftItemsCart from "./CraftItemsCart";
+import PrivateRout from "./PrivateRout";
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
             <Category></Category>
             <Frames></Frames>
             <About></About>
+            
             
         </div>
     );

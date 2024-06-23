@@ -22,6 +22,7 @@ import CraftItemsCardDetails from './Components/CraftItemsCardDetails.jsx';
 import CategoryCard from './Components/CategoryCard.jsx';
 import Category from './Components/Category.jsx';
 import AllCategoryDetails from './Components/AllCategoryDetails.jsx';
+import PrivateRout from './Components/PrivateRout.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/addcraft",
-        element:<AddCrft></AddCrft>
+        element:<PrivateRout><AddCrft></AddCrft></PrivateRout>
       },
       {
         path:"/allcraft",
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/mycraft",
-        element:<MyCraft></MyCraft>
+        element:<PrivateRout><MyCraft></MyCraft></PrivateRout>
       },
       {
         path:"/artandcraftcart",
@@ -75,7 +76,7 @@ const router = createBrowserRouter([
       {
         path:'/art/:_id',
         loader:({params})=>fetch(`http://localhost:5000/art/${params._id}`),
-        element:<CraftItemsCardDetails></CraftItemsCardDetails>
+        element:<PrivateRout><CraftItemsCardDetails></CraftItemsCardDetails></PrivateRout>
       },
       {
         path:"/caegory", 
@@ -86,7 +87,11 @@ const router = createBrowserRouter([
         path:'/allCategoryDetails:_id',
         loader:({params})=>fetch(`http://localhost:5000/art/${params._id}`),
         element:<AllCategoryDetails></AllCategoryDetails>
-      }
+      },
+      // {
+      //   path:'/private',
+      //   element:<PrivateRout></PrivateRout>
+      // }
       
     ]
   },
